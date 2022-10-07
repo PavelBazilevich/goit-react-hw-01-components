@@ -1,3 +1,12 @@
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
 .item {
   margin: 10px 0px;
   display: flex;
@@ -12,6 +21,11 @@
     rgba(255, 215, 0, 1) 60%
   );
   border: solid 1px rgb(1, 1, 1);
+}
+
+.item:hover,
+.item:focus {
+  transform: perspective(500px) scale(1) translateZ(100px);
 }
 .status {
   display: block;
