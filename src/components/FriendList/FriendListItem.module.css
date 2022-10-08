@@ -1,12 +1,3 @@
-@keyframes example {
-  from {
-    background-color: red;
-  }
-  to {
-    background-color: yellow;
-  }
-}
-
 .item {
   margin: 10px 0px;
   display: flex;
