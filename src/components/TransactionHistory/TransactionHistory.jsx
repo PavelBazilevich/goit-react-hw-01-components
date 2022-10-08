@@ -1,4 +1,6 @@
 import css from 'components/TransactionHistory/TransactionHistory.module.css';
+import PropTypes, { arrayOf } from 'prop-types';
+
 import { PositionElement } from './PositionElement';
 
 export const TransactionHistory = ({ items }) => {
@@ -24,4 +26,12 @@ export const TransactionHistory = ({ items }) => {
       </tbody>
     </table>
   );
+};
+
+PositionElement.propTypes = {
+  items: arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
